@@ -51,16 +51,34 @@ h3 {
 /*section 3*/
 
 .s-3 {
-	padding-top: 50px;
+	padding-top: 50px 0;
 	background-color: lightblue;
 }
 
+.wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
 .card {
-	width: 150px;
+	width: 300px;
 	height: 150px;
 	background-color: lightgray;
-	border: 2px;
+	border: 2px solid black;
+	margin: 10px;
 }
 h4 {
 	font-size: 22px;
+}
+
+.card:nth-child(5) {
+	background-color: darkred;
+}
+
+.card:nth-child(odd) {
+	background-color: orange;
+}
+
+.card:nth-child(even) {
+	background-color: green;
 }
